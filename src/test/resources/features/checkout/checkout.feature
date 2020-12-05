@@ -17,7 +17,7 @@ Feature: Checkout scenarios
     Examples: 
       | Username                | Password     | Filter              | FirstName | LastName | Zipcode |
       | standard_user           | secret_sauce | Name (A to Z)       | Satheesh  | kannan   |  626189 |
-      | locked_out_user         | secret_sauce | Name (Z to A)       | kannan    | satheesh |  626130 |
+      | standard_user           | secret_sauce | Name (Z to A)       | kannan    | satheesh |  626130 |
       | problem_user            | secret_sauce | Price (low to high) | mukil     | thiru    |  626124 |
       | performance_glitch_user | secret_sauce | Price (high to low) | seetha    | lakshmi  |  626123 |
 
