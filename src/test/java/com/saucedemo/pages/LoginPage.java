@@ -53,7 +53,12 @@ public class LoginPage extends PageObject{
 		try {
 			clickOn(btnLogin);
 			String url = getDriver().getCurrentUrl();
-			assertEquals("https://www.saucedemo.com/",url);
+			
+			if(url.equals("https://www.saucedemo.com/") ) {
+				assertEquals("https://www.saucedemo.com/",url);
+			}else {
+			assertEquals("https://www.saucedemo.com/inventory.html",url);
+			}
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
